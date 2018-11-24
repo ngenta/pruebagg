@@ -45,7 +45,40 @@
     overflow: hidden;
 }
 
+.jumbotron{
+    height: 1200px;
+}
+
+@media (min-width: 768px) and (max-width: 2099px) { 
+
+    .jumbotron{
+        height: 800px;
+    }
+    
+    #servicios{
+        height: 960px;
+    }
+}
+ 
+
+@media (max-width: 767px) { ... }
+ 
+/ Móviles en vertical
+   ------------------------------------------------------------------------- */
+@media (max-width: 480px) { ... }
 
 
 
 
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+   
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
